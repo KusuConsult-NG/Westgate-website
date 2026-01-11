@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Contact() {
     const [showScheduler, setShowScheduler] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     return (
         <div className="font-display bg-background-light dark:bg-background-dark text-[#0d121b] dark:text-slate-100 transition-colors duration-300">
@@ -23,10 +24,58 @@ export default function Contact() {
                         Portal
                     </Link>
                 </div>
-                <button className="lg:hidden p-2 text-slate-700 dark:text-slate-300">
-                    <span className="material-symbols-outlined">menu</span>
+                <button
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                    className="lg:hidden p-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                >
+                    <span className="material-symbols-outlined">{showMobileMenu ? 'close' : 'menu'}</span>
                 </button>
             </header>
+
+            {/* Mobile Menu Dropdown */}
+            {showMobileMenu && (
+                <div className="lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-lg sticky top-[73px] z-40 animate-fade-in">
+                    <div className="max-w-[1200px] mx-auto px-6 py-4">
+                        <nav className="flex flex-col gap-4">
+                            <Link
+                                to="/"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-slate-700 dark:text-slate-300 text-base font-medium hover:text-primary transition-colors py-2 border-b border-slate-100 dark:border-slate-800"
+                            >
+                                Expertise
+                            </Link>
+                            <Link
+                                to="/insights"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-slate-700 dark:text-slate-300 text-base font-medium hover:text-primary transition-colors py-2 border-b border-slate-100 dark:border-slate-800"
+                            >
+                                Insights
+                            </Link>
+                            <Link
+                                to="/about"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-slate-700 dark:text-slate-300 text-base font-medium hover:text-primary transition-colors py-2 border-b border-slate-100 dark:border-slate-800"
+                            >
+                                About
+                            </Link>
+                            <Link
+                                to="/contact"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-primary text-base font-bold py-2 border-b border-slate-100 dark:border-slate-800"
+                            >
+                                Contact
+                            </Link>
+                            <Link
+                                to="/portal"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="bg-blue-600 text-white text-base font-bold px-5 py-3 rounded-lg hover:bg-blue-700 transition-all shadow-sm text-center mt-2"
+                            >
+                                Portal
+                            </Link>
+                        </nav>
+                    </div>
+                </div>
+            )}
 
             <main className="max-w-[1200px] mx-auto px-6 py-10">
                 {/* Hero Section */}

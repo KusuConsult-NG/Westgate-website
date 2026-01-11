@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function About() {
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
         <div className="font-display transition-colors duration-300">
             {/* Top Navigation Bar */}
@@ -22,12 +24,56 @@ export default function About() {
                             <Link to="/services" className="text-sm font-medium leading-normal hover:text-primary transition-colors">Services</Link>
                             <Link to="/about" className="text-sm font-medium leading-normal hover:text-primary transition-colors">About</Link>
                         </nav>
-                        <Link to="/contact" className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                        <Link to="/contact" className="hidden md:flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
                             <span className="truncate">Contact Us</span>
                         </Link>
+                        <button
+                            onClick={() => setShowMobileMenu(!showMobileMenu)}
+                            className="md:hidden p-2 text-primary dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                        >
+                            <span className="material-symbols-outlined">{showMobileMenu ? 'close' : 'menu'}</span>
+                        </button>
                     </div>
                 </header>
             </div>
+
+            {/* Mobile Menu Dropdown */}
+            {showMobileMenu && (
+                <div className="md:hidden bg-ivory dark:bg-background-dark border-b border-[#e9e7f3] dark:border-gray-800 shadow-lg sticky top-[73px] z-40 animate-fade-in">
+                    <div className="max-w-[1200px] mx-auto px-6 py-4">
+                        <nav className="flex flex-col gap-4">
+                            <Link
+                                to="/"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-slate-700 dark:text-slate-300 text-base font-medium hover:text-primary transition-colors py-2 border-b border-slate-100 dark:border-gray-700"
+                            >
+                                Our Approach
+                            </Link>
+                            <Link
+                                to="/about"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-primary text-base font-bold py-2 border-b border-slate-100 dark:border-gray-700"
+                            >
+                                Who We Work With
+                            </Link>
+                            <Link
+                                to="/services"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="text-slate-700 dark:text-slate-300 text-base font-medium hover:text-primary transition-colors py-2 border-b border-slate-100 dark:border-gray-700"
+                            >
+                                Services
+                            </Link>
+                            <Link
+                                to="/contact"
+                                onClick={() => setShowMobileMenu(false)}
+                                className="bg-primary text-white text-base font-bold px-5 py-3 rounded-lg hover:bg-primary/90 transition-all shadow-sm text-center mt-2"
+                            >
+                                Contact Us
+                            </Link>
+                        </nav>
+                    </div>
+                </div>
+            )}
 
             {/* Hero Section */}
             <div className="flex flex-1 justify-center py-12 bg-ivory dark:bg-background-dark/50">
@@ -216,6 +262,6 @@ export default function About() {
                     </div>
                 </div>
             </footer>
-        </div>
+        </div >
     );
 }
