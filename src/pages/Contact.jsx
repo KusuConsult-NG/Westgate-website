@@ -50,22 +50,22 @@ export default function Contact() {
                             </h2>
                             <div className="grid grid-cols-1 gap-6">
                                 <div className="border-l-2 border-primary pl-4 py-1">
-                                    <p className="text-slate-accent dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Office Region</p>
-                                    <p className="text-lg font-medium">Global / London HQ</p>
+                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Office Region</p>
+                                    <p className="text-lg font-medium text-slate-900 dark:text-white">Global / London HQ</p>
                                 </div>
                                 <div className="border-l-2 border-slate-300 dark:border-slate-700 pl-4 py-1">
-                                    <p className="text-slate-accent dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Response Protocol</p>
-                                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">Institutional inquiries are reviewed and addressed within 48 business hours by our advisory team.</p>
+                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Response Protocol</p>
+                                    <p className="text-slate-900 dark:text-slate-200 leading-relaxed">Institutional inquiries are reviewed and addressed within 48 business hours by our advisory team.</p>
                                 </div>
                                 <div className="border-l-2 border-slate-300 dark:border-slate-700 pl-4 py-1">
-                                    <p className="text-slate-accent dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Philosophy</p>
-                                    <p className="italic text-slate-700 dark:text-slate-300">"Enduring Intelligence: Depth, clarity, and the synthesis of long-term strategic foresight."</p>
+                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Philosophy</p>
+                                    <p className="italic text-slate-900 dark:text-slate-200">"Enduring Intelligence: Depth, clarity, and the synthesis of long-term strategic foresight."</p>
                                 </div>
                             </div>
                         </div>
                         <div className="p-6 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                            <p className="font-bold text-sm mb-4">Connect with our network</p>
-                            <a className="flex items-center gap-3 text-primary hover:underline font-medium" href="#">
+                            <p className="font-bold text-sm mb-4 text-slate-900 dark:text-white">Connect with our network</p>
+                            <a className="flex items-center gap-3 text-blue-600 hover:underline font-medium" href="#">
                                 <span className="material-symbols-outlined">link</span>
                                 LinkedIn: Westgate Stratagem LTD
                             </a>

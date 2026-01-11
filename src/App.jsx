@@ -9,6 +9,7 @@ import ServiceAI from './pages/services/ServiceAI';
 import ServiceTraining from './pages/services/ServiceTraining';
 import ServiceStrategy from './pages/services/ServiceStrategy';
 import ServiceAdvisory from './pages/services/ServiceAdvisory';
+import Portal from './pages/Portal';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/services/training" element={<ServiceTraining />} />
           <Route path="/services/strategy" element={<ServiceStrategy />} />
           <Route path="/services/advisory" element={<ServiceAdvisory />} />
+          <Route path="/portal" element={<Portal />} />
         </Route>
         {/* Catch all - 404 */}
         <Route path="*" element={<Navigate to="/" replace />} />
