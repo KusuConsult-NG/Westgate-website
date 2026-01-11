@@ -19,9 +19,9 @@ export default function Contact() {
                         <Link to="/about" className="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors">About</Link>
                         <Link to="/contact" className="text-primary text-sm font-bold border-b-2 border-primary">Contact</Link>
                     </nav>
-                    <button className="bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-all shadow-sm">
+                    <Link to="/portal" className="bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-all shadow-sm">
                         Portal
-                    </button>
+                    </Link>
                 </div>
                 <button className="lg:hidden p-2 text-slate-700 dark:text-slate-300">
                     <span className="material-symbols-outlined">menu</span>
