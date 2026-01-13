@@ -199,9 +199,10 @@ export default function ServiceAI() {
                             Ready to integrate 'Enduring Intelligence' into your research workflow? Let's discuss how we can tailor our strategies to your specific academic or institutional needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link to="/contact" className="bg-primary text-white font-bold h-14 px-10 rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center">
+                            <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="bg-primary text-white font-bold h-14 px-10 rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                                <span className="material-symbols-outlined text-sm">calendar_today</span>
                                 Book a Consultation
-                            </Link>
+                            </a>
                             <button className="bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-deep-navy dark:text-white font-bold h-14 px-10 rounded-lg hover:bg-slate-50 transition-all">
                                 Request Brochure
                             </button>

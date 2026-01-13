@@ -163,9 +163,10 @@ export default function ServiceTraining() {
                         <p className="text-lg opacity-90 mb-10 leading-relaxed">
                             Tools change, but critical thinking endures. Empower your staff to master the tools of tomorrow, today.
                         </p>
-                        <Link to="/contact" className="bg-white text-primary font-bold h-14 px-12 rounded-full hover:scale-105 transition-transform inline-flex items-center justify-center shadow-xl">
+                        <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-primary font-bold h-14 px-12 rounded-full hover:scale-105 transition-transform inline-flex items-center justify-center shadow-xl gap-2">
+                            <span className="material-symbols-outlined text-sm">calendar_month</span>
                             Discuss Training Needs
-                        </Link>
+                        </a>
                     </div>
                 </section>
             </main>

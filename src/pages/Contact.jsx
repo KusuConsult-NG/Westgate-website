@@ -239,25 +239,11 @@ export default function Contact() {
                             </button>
                         </div>
                         <div className="p-6">
-                            <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-8 text-center">
-                                <span className="material-symbols-outlined text-6xl text-blue-600 mb-4 block">calendar_month</span>
-                                <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Calendly Integration Ready</h4>
-                                <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-md mx-auto">
-                                    To activate the scheduler, add your Calendly URL to this component. Replace the placeholder iframe src with your booking link.
-                                </p>
-                                <div className="bg-white dark:bg-slate-900 rounded-lg p-4 text-left">
-                                    <p className="text-sm font-mono text-slate-700 dark:text-slate-300">
-                                        src="https://calendly.com/your-username/consultation"
-                                    </p>
-                                </div>
-                            </div>
-                            {/* Uncomment and add your Calendly URL:
-                            <iframe 
-                                src="https://calendly.com/your-username/consultation"
+                            <iframe
+                                src="https://calendly.com/martynseric/30min"
                                 className="w-full h-[600px] border-0 rounded-lg"
                                 title="Schedule a consultation"
                             ></iframe>
-                            */}
                         </div>
                     </div>
                 </div>

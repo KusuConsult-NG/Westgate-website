@@ -58,6 +58,12 @@ export default function Footer() {
                                 <Phone size={18} className="text-accent shrink-0" />
                                 <span>+1 (555) 123-4567</span>
                             </li>
+                            <li className="flex items-center gap-3 text-gray-400 text-sm mt-4">
+                                <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 transition-colors font-semibold flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-sm">calendar_today</span>
+                                    Schedule a Call
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

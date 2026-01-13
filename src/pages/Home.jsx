@@ -52,9 +52,10 @@ export default function Home() {
                         </p>
                         {/* Enhanced CTAs with glows */}
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Link to="/contact" className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:translate-y-[-2px] hover:bg-blue-700 transition-all text-center shadow-[0_8px_30px_rgba(37,99,235,0.4)] hover:shadow-[0_12px_40px_rgba(37,99,235,0.6)]">
-                                Inquire Now
-                            </Link>
+                            <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:translate-y-[-2px] hover:bg-blue-700 transition-all text-center shadow-[0_8px_30px_rgba(37,99,235,0.4)] hover:shadow-[0_12px_40px_rgba(37,99,235,0.6)] flex items-center justify-center gap-2">
+                                <span className="material-symbols-outlined text-sm">calendar_today</span>
+                                Book Consultation
+                            </a>
                             <Link to="/about" className="w-full sm:w-auto px-8 py-4 border-2 border-white/40 bg-white/5 backdrop-blur-sm text-white font-bold rounded-lg hover:bg-white/10 hover:border-white/60 transition-all text-center shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
                                 Our Perspective
                             </Link>
@@ -224,6 +225,12 @@ export default function Home() {
                                 <li>London • New York • Singapore</li>
                                 <li>inquiry@westgate-stratagem.com</li>
                                 <li>+44 (0) 20 7946 0123</li>
+                                <li className="pt-2">
+                                    <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-semibold flex items-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">calendar_today</span>
+                                        Schedule a Call
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div>
