@@ -1,36 +1,35 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     darkMode: 'class',
     theme: {
         extend: {
             colors: {
-                // Consolidated color palette
                 primary: {
-                    DEFAULT: "#137fec", // Home, AI, Training
-                    royal: "#0f49bd",   // Strategy, Advisory, Contact
-                    purple: "#270da5",  // About
-                    news: "#0d40a5",    // Insights
+                    DEFAULT: "#137fec",
+                    royal: "#0f49bd",
+                    purple: "#270da5",
+                    news: "#0d40a5",
                 },
                 background: {
-                    light: "#f6f7f8", // Home, AI
-                    dark: "#0f172a",  // Home
-                    "dark-blue": "#101922", // AI, Training, Strategy
-                    "dark-deep": "#0a0f1d", // Home slate-950 equivalent
+                    light: "#f6f7f8",
+                    dark: "#0f172a",
+                    "dark-blue": "#101922",
+                    "dark-deep": "#0a0f1d",
                 },
                 slate: {
                     950: "#0a0f1d",
-                    gray: "#4c739a", // AI
-                    accent: "#334155", // Strategy
+                    gray: "#4c739a",
+                    accent: "#334155",
                 },
                 accent: {
                     gold: "#c5a059",
                 },
-                ivory: "#fcfcfd", // AI
-                "ivory-light": "#fafafb", // Contact
+                ivory: "#fcfcfd",
+                "ivory-light": "#fafafb",
             },
             fontFamily: {
                 sans: ["Inter", "Public Sans", "Noto Sans", "sans-serif"],
