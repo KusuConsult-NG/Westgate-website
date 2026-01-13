@@ -16,9 +16,9 @@ export default function Insights() {
                     </div>
                     <nav className="hidden md:flex items-center gap-8">
                         <Link to="/insights" className="text-sm font-medium hover:text-primary transition-colors text-primary">Insights</Link>
-                        <Link to="/services" className="text-sm font-medium hover:text-primary transition-colors">Services</Link>
-                        <Link to="/services/advisory" className="text-sm font-medium hover:text-primary transition-colors">Advisory</Link>
-                        <Link to="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
+                        <Link to="/services" className="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors">Services</Link>
+                        <Link to="/services/advisory" className="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors">Advisory</Link>
+                        <Link to="/about" className="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors">About</Link>
                     </nav>
                 </div>
                 <div className="flex items-center gap-6">

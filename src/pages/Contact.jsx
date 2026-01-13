@@ -11,7 +11,7 @@ export default function Contact() {
             <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-6 md:px-20 py-4 sticky top-0 z-50">
                 <div className="flex items-center gap-3 text-primary">
                     <img src="/assets/wgs-logo.jpg" alt="WGS Logo" className="h-10 w-auto" />
-                    <h2 class="text-xl font-bold leading-tight tracking-tight">Westgate Stratagem</h2>
+                    <h2 className="text-xl font-bold leading-tight tracking-tight">Westgate Stratagem</h2>
                 </div>
                 <div className="hidden lg:flex flex-1 justify-end items-center gap-10">
                     <nav className="flex items-center gap-8">
@@ -99,16 +99,16 @@ export default function Contact() {
                             </h2>
                             <div className="grid grid-cols-1 gap-6">
                                 <div className="border-l-2 border-primary pl-4 py-1">
-                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Office Region</p>
+                                    <p className="text-slate-700 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Office Region</p>
                                     <p className="text-lg font-medium text-slate-900 dark:text-white">Global / London HQ</p>
                                 </div>
                                 <div className="border-l-2 border-slate-300 dark:border-slate-700 pl-4 py-1">
-                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Response Protocol</p>
-                                    <p className="text-slate-900 dark:text-slate-200 leading-relaxed">Institutional inquiries are reviewed and addressed within 48 business hours by our advisory team.</p>
+                                    <p className="text-slate-700 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Response Protocol</p>
+                                    <p className="text-slate-900 dark:text-slate-200 leading-relaxed font-medium">Institutional inquiries are reviewed and addressed within 48 business hours by our advisory team.</p>
                                 </div>
                                 <div className="border-l-2 border-slate-300 dark:border-slate-700 pl-4 py-1">
-                                    <p className="text-slate-600 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Philosophy</p>
-                                    <p className="italic text-slate-900 dark:text-slate-200">"Enduring Intelligence: Depth, clarity, and the synthesis of long-term strategic foresight."</p>
+                                    <p className="text-slate-700 dark:text-slate-400 text-xs uppercase tracking-widest font-bold mb-1">Philosophy</p>
+                                    <p className="italic text-slate-900 dark:text-slate-200 font-medium">"Enduring Intelligence: Depth, clarity, and the synthesis of long-term strategic foresight."</p>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ export default function Contact() {
                 {/* Consultation Booking Section */}
                 <div className="mt-24 border-t border-slate-200 dark:border-slate-800 pt-16 pb-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">READY TO PROCEED?</span>
+                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary-royal dark:text-primary-royal/80 text-xs font-bold rounded-full mb-4">READY TO PROCEED?</span>
                         <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Schedule an Introductory Call</h2>
                         <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto">
                             For those ready to discuss a specific project or partnership, choose a time in our advisor's calendar for a 20-minute alignment call.
