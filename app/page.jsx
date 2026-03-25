@@ -41,7 +41,7 @@ export default function Home() {
                         <Link href="/contact" className="text-sm font-semibold text-slate-300 hover:text-white transition-all relative group">Contact<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
                     </nav>
                     <div className="flex items-center gap-4">
-                        <Link href="/contact" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book a Call</Link>
+                        <Link href="/contact?type=consultation" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book a Call</Link>
                         <button onClick={() => setShowMobileMenu(!showMobileMenu)} className="md:hidden p-2 text-primary hover:bg-white/10 rounded-lg transition-colors">
                             <span className="material-symbols-outlined">{showMobileMenu ? 'close' : 'menu'}</span>
                         </button>
@@ -57,7 +57,7 @@ export default function Home() {
                             <Link href="/services/digital" onClick={() => setShowMobileMenu(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">Digital Product Development</Link>
                             <Link href="/services/ai" onClick={() => setShowMobileMenu(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">AI Training</Link>
                             <Link href="/insights" onClick={() => setShowMobileMenu(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">Blog</Link>
-                            <Link href="/contact" onClick={() => setShowMobileMenu(false)} className="bg-primary text-white text-lg font-bold px-5 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg mt-2 text-center">Contact Us</Link>
+                            <Link href="/contact?type=consultation" onClick={() => setShowMobileMenu(false)} className="bg-primary text-white text-lg font-bold px-5 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg mt-2 text-center">Contact Us</Link>
                         </nav>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ export default function Home() {
                             <Link href="/services/ai" className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2">
                                 <span className="material-symbols-outlined text-base">school</span>Book Training
                             </Link>
-                            <Link href="/contact" className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                            <Link href="/contact?type=consultation" className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2">
                                 <span className="material-symbols-outlined text-base">calendar_today</span>Schedule Consultation
                             </Link>
                         </div>
@@ -228,7 +228,7 @@ export default function Home() {
                         <h2 className="serif-heading text-4xl md:text-6xl text-white font-bold mb-8 leading-tight">Ready to Build Something?</h2>
                         <p className="text-slate-300 text-xl font-light leading-relaxed mb-12 max-w-2xl mx-auto">Whether you need a digital platform, team training, or strategic guidance, we're here to help.</p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-                            <Link href="/contact" className="w-full sm:w-auto px-10 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_40px_rgba(19,127,236,0.5)] transition-all flex items-center justify-center gap-2">
+                            <Link href="/contact?type=consultation" className="w-full sm:w-auto px-10 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_40px_rgba(19,127,236,0.5)] transition-all flex items-center justify-center gap-2">
                                 <span className="material-symbols-outlined text-base">mail</span>Contact Us
                             </Link>
                             <Link href="/services/digital" className="w-full sm:w-auto px-10 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition-all">View Services</Link>

@@ -31,7 +31,7 @@ function SharedHeader({ active }) {
                         ))}
                     </nav>
                     <div className="flex items-center gap-4">
-                        <Link href="/contact" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book a Call</Link>
+                        <Link href="/contact?type=consultation" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book a Call</Link>
                         <button onClick={() => setShowMobile(!showMobile)} className="md:hidden p-2 text-primary hover:bg-white/10 rounded-lg transition-colors">
                             <span className="material-symbols-outlined">{showMobile ? 'close' : 'menu'}</span>
                         </button>
@@ -46,7 +46,7 @@ function SharedHeader({ active }) {
                             <Link href="/services/digital" onClick={() => setShowMobile(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">Digital Product Development</Link>
                             <Link href="/services/ai" onClick={() => setShowMobile(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">AI Training</Link>
                             <Link href="/insights" onClick={() => setShowMobile(false)} className="text-slate-300 text-lg font-medium hover:text-white py-2">Blog</Link>
-                            <Link href="/contact" onClick={() => setShowMobile(false)} className="bg-primary text-white text-lg font-bold px-5 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg mt-2 text-center">Contact Us</Link>
+                            <Link href="/contact?type=consultation" onClick={() => setShowMobile(false)} className="bg-primary text-white text-lg font-bold px-5 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg mt-2 text-center">Contact Us</Link>
                         </nav>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ export default function DigitalService() {
                                 We build web platforms, mobile applications, and custom software for universities, NGOs, government agencies, and businesses. From strategy to deployment and ongoing support.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link href="/contact" className="bg-primary px-10 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20">Start a Project</Link>
+                                <Link href="/contact?type=digital" className="bg-primary px-10 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20">Start a Project</Link>
                                 <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="glass px-10 py-5 rounded-2xl text-sm font-bold border-white/5 hover:bg-white/5 transition-all flex items-center gap-2">
                                     <span className="material-symbols-outlined text-base">calendar_today</span>Schedule Consultation
                                 </a>
@@ -237,9 +237,9 @@ export default function DigitalService() {
                                 <h3 className="serif-heading text-3xl text-white font-bold mb-4">Every Project is Different</h3>
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6 font-light">Our engagements typically start from ₦30,000+ depending on scope, complexity, and timeline. We provide detailed proposals with clear milestones, deliverables, and payment schedules.</p>
                                 <div className="p-6 bg-primary/10 rounded-2xl border border-primary/20 mb-8">
-                                    <p className="text-slate-300 text-sm leading-relaxed">Ready to start? <Link href="/contact" className="text-primary font-bold hover:underline">Schedule a consultation →</Link></p>
+                                    <p className="text-slate-300 text-sm leading-relaxed">Ready to start? <Link href="/contact?type=digital" className="text-primary font-bold hover:underline">Schedule a consultation →</Link></p>
                                 </div>
-                                <Link href="/contact" className="w-full bg-primary px-8 py-4 rounded-xl text-white font-bold text-center block hover:bg-primary/90 transition-all">Start a Project</Link>
+                                <Link href="/contact?type=digital" className="w-full bg-primary px-8 py-4 rounded-xl text-white font-bold text-center block hover:bg-primary/90 transition-all">Start a Project</Link>
                             </div>
                         </div>
                     </div>

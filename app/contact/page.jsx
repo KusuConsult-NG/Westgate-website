@@ -14,6 +14,13 @@ export default function Contact() {
             { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
         );
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        const params = new URLSearchParams(window.location.search);
+        const typeParam = params.get('type');
+        if (typeParam && ['digital', 'ai', 'consultation', 'other'].includes(typeParam)) {
+            setFormData(prev => ({ ...prev, type: typeParam }));
+        }
+
         return () => observer.disconnect();
     }, []);
 

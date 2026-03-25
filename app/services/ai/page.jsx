@@ -65,7 +65,7 @@ export default function ServiceAI() {
                         <Link href="/insights" className="text-sm font-semibold text-slate-300 hover:text-white relative group">Blog<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
                         <Link href="/contact" className="text-sm font-semibold text-slate-300 hover:text-white relative group">Contact<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
                     </nav>
-                    <Link href="/contact" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book Training</Link>
+                    <Link href="/contact?type=ai" className="hidden md:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">Book Training</Link>
                 </div>
             </header>
 
@@ -87,7 +87,7 @@ export default function ServiceAI() {
                                 From individual researchers to institutional teams, we provide practical AI training designed specifically for the people who do serious work—academics, researchers, professionals, and knowledge workers.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link href="/contact" className="bg-primary px-10 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20">Schedule a Training Consultation</Link>
+                                <Link href="/contact?type=ai" className="bg-primary px-10 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20">Schedule a Training Consultation</Link>
                                 <a href="https://calendly.com/martynseric/30min" target="_blank" rel="noopener noreferrer" className="glass px-10 py-5 rounded-2xl text-sm font-bold border-white/5 hover:bg-white/5 transition-all">Book a Call</a>
                             </div>
                         </div>
@@ -305,7 +305,7 @@ export default function ServiceAI() {
                             Whether you're an individual researcher, leading a department, or planning institutional training, let's discuss how we can design a program that meets your needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-                            <Link href="/contact" className="bg-primary px-12 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20 flex items-center gap-3 group">
+                            <Link href="/contact?type=ai" className="bg-primary px-12 py-5 rounded-2xl text-sm font-bold hover:bg-primary/90 transition-all shadow-2xl shadow-primary/20 flex items-center gap-3 group">
                                 <span className="material-symbols-outlined text-sm">calendar_today</span>
                                 Schedule a Training Consultation
                                 <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
